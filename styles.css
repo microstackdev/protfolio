@@ -252,26 +252,28 @@ img {
     align-items: center;
     justify-content: center;
     transition: var(--transition);
+    color: var(--text-primary);
 }
 
 .theme-toggle:hover {
     background-color: rgba(var(--primary), 0.1);
 }
 
-.dark .sun-icon {
-    display: none;
-}
-
-.dark .moon-icon {
+ html.dark .sun-icon {
     display: block;
 }
 
-:not(.dark) .moon-icon {
+ html.dark .moon-icon {
     display: none;
 }
 
-:not(.dark) .sun-icon {
+ html:not(.dark) .moon-icon {
     display: block;
+}
+
+ html:not(.dark) .sun-icon {
+    display: none;
+
 }
 
 .mobile-menu-toggle {
