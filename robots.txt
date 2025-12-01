@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://microstackdev.github.io/protfolio/sitemap.xml
